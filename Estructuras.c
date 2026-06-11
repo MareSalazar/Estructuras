@@ -12,6 +12,9 @@ typedef struct {
     Direccion direccion;
 } Alumno;
 
+void mostrarAlumno(Alumno *a);
+
+
 int main(){
     Alumno p1;
     strcpy(p1.nombre, "Eddy\n");
@@ -23,8 +26,15 @@ int main(){
     printf ("Direccion: %s", p1.direccion.callePrincipal);
     printf (" %d", p1.direccion.numCasa);
     printf (" %s", p1.direccion.calleSecundaria);
-
+    mostrarAlumno(&p1);
 
     return 0; 
+}
+void mostrarAlumno(Alumno *a){
+    printf ("Nombre:%s \n", a->nombre);
+    printf ("Direccion: %s", a->direccion.callePrincipal);
+    printf (" %d", a->direccion.numCasa);
+    printf (" %s", a->direccion.calleSecundaria);
+
 }
 
