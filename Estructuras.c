@@ -22,12 +22,7 @@ int main(){
     p1.direccion.numCasa=123;
     strcpy(p1.direccion.calleSecundaria, "Florida");
     //a1.edad=30;
-    printf ("Nombre:%s \n", p1.nombre);
-    printf ("Direccion: %s", p1.direccion.callePrincipal);
-    printf (" %d", p1.direccion.numCasa);
-    printf (" %s", p1.direccion.calleSecundaria);
     mostrarAlumno(&p1);
-
     return 0; 
 }
 void mostrarAlumno(Alumno *a){
