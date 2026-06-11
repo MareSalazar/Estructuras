@@ -1,19 +1,19 @@
 #include<stdio.h>
 #include<string.h>
 
-struct Direccion {
+typedef struct  {
     char callePrincipal[50];
     int numCasa;
     char calleSecundaria[50];
-};
-struct alumno{
+}Direccion;
+typedef struct {
     char nombre[50];
     int edad;
-    struct Direccion direccion;
-};
+    Direccion direccion;
+} Alumno;
 
 int main(){
-    struct alumno p1;
+    Alumno p1;
     strcpy(p1.nombre, "Eddy\n");
     strcpy(p1.direccion.callePrincipal, "Av.Prensa" );
     p1.direccion.numCasa=123;
